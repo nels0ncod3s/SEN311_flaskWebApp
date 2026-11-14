@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS miva_flask_db;
+USE miva_flask_db;
+
+CREATE TABLE IF NOT EXISTS tbl_user (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
